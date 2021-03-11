@@ -1,11 +1,8 @@
 import '../styles/globals.sass'
+import { AppProps } from 'next/app'
 
-import { ChallengesProvider } from '../contexts/ChallengesContext'
-
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChallengesProvider>
-      <Component {...pageProps} />
-    </ChallengesProvider>
+    <Component {...pageProps} />
   )
 }
