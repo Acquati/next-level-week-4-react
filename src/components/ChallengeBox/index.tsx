@@ -1,7 +1,7 @@
+import styles from './styles.module.sass'
 import { useContext } from 'react'
 import { ChallengesContext } from '../../contexts/ChallengesContext'
 import { CountdownContext } from '../../contexts/CountdownContext'
-import styles from './styles.module.sass'
 
 export default function ChallengeBox() {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext)

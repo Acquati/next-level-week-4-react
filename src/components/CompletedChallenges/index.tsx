@@ -1,6 +1,6 @@
+import styles from './styles.module.sass'
 import { useContext } from 'react'
 import { ChallengesContext } from '../../contexts/ChallengesContext'
-import styles from './styles.module.sass'
 
 export default function CompletedChallenges() {
   const { challengesCompleted } = useContext(ChallengesContext)

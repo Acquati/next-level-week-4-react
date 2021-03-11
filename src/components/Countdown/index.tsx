@@ -1,6 +1,6 @@
+import styles from './styles.module.sass'
 import { useContext } from 'react'
 import { CountdownContext } from '../../contexts/CountdownContext'
-import styles from './styles.module.sass'
 
 export default function Countdown() {
   const { minutes, seconds, hasFinished, isActive, startCountdown, resetCountdown } = useContext(CountdownContext)
